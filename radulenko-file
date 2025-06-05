@@ -8,6 +8,7 @@ import static org.cw_4_classes_objects_static_non_static.cw.constants.GeneralTim
 
 public class Room {
     protected String nameOfRoom;
+    int x;
     private double width, length;
 
     protected int numberOfWindows, numberOfFurniture;
@@ -34,11 +35,8 @@ public class Room {
         areaOfRoom = width * length;
     }
 
-    public double getAreaOfRoom() {
-        return areaOfRoom;
-    }
 
-    public void printArea(){
+    public void printArea(String test){
         System.out.println("Area of " + nameOfRoom + " is " + areaOfRoom);
     }
 
